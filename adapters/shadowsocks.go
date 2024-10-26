@@ -8,10 +8,10 @@ import (
 	"net/url"
 	"strconv"
 
-	C "github.com/Dreamacro/clash/constant"
+	C "github.com/dreamsxin/clash/constant"
 
-	"github.com/riobard/go-shadowsocks2/core"
-	"github.com/riobard/go-shadowsocks2/socks"
+	"github.com/shadowsocks/go-shadowsocks2/core"
+	"github.com/shadowsocks/go-shadowsocks2/socks"
 )
 
 // ShadowsocksAdapter is a shadowsocks adapter

@@ -1,25 +1,6 @@
-<h1 align="center">
-  <img src="https://github.com/Dreamacro/clash/raw/master/docs/logo.png" alt="Clash" width="200">
-  <br>
-  Clash
-  <br>
-</h1>
+# Clash
 
-<h4 align="center">A rule based proxy in Go.</h4>
-
-<p align="center">
-  <a href="https://travis-ci.org/Dreamacro/clash">
-    <img src="https://img.shields.io/travis/Dreamacro/clash.svg?style=flat-square"
-         alt="Travis-CI">
-  </a>
-  <a href="https://goreportcard.com/report/github.com/Dreamacro/clash">
-      <img src="https://goreportcard.com/badge/github.com/Dreamacro/clash?style=flat-square">
-  </a>
-  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2FDreamacro%2Fclash?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2FDreamacro%2Fclash.svg?type=shield"/></a>
-  <a href="https://github.com/Dreamacro/clash/releases">
-    <img src="https://img.shields.io/github/release/Dreamacro/clash/all.svg?style=flat-square">
-  </a>
-</p>
+A rule based proxy in Go.
 
 ## Features
 
@@ -32,28 +13,8 @@
 You can build from source:
 
 ```sh
-go get -u -v github.com/Dreamacro/clash
+go get -u -v github.com/dreamsxin/clash
 ```
-
-Pre-built binaries are available: [release](https://github.com/Dreamacro/clash/releases)
-
-Requires Go >= 1.10.
-
-## Daemon
-
-Unfortunately, there is no native elegant way to implement golang's daemon.
-
-So we can use third-party daemon tools like pm2, supervisor, and so on.
-
-In the case of [pm2](https://github.com/Unitech/pm2), we can start the daemon this way:
-
-```sh
-pm2 start clash
-```
-
-If you have Docker installed, you can run clash directly using `docker-compose`.
-
-[Run clash in docker](https://github.com/Dreamacro/clash/wiki/Run-clash-in-docker)
 
 ## Config
 

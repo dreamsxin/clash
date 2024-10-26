@@ -1,7 +1,7 @@
 package rules
 
 import (
-	C "github.com/Dreamacro/clash/constant"
+	C "github.com/dreamsxin/clash/constant"
 
 	"github.com/oschwald/geoip2-golang"
 	log "github.com/sirupsen/logrus"
@@ -13,7 +13,7 @@ func init() {
 	var err error
 	mmdb, err = geoip2.Open(C.MMDBPath)
 	if err != nil {
-		log.Fatalf("Can't load mmdb: %s", err.Error())
+		log.Errorf("Can't load mmdb: %s", err.Error())
 	}
 }
 
@@ -28,6 +28,9 @@ func (g *GEOIP) RuleType() C.RuleType {
 
 func (g *GEOIP) IsMatch(addr *C.Addr) bool {
 	if addr.IP == nil {
+		return false
+	}
+	if mmdb == nil {
 		return false
 	}
 	record, _ := mmdb.Country(*addr.IP)

@@ -4,7 +4,7 @@ import (
 	"io"
 	"net"
 
-	C "github.com/Dreamacro/clash/constant"
+	C "github.com/dreamsxin/clash/constant"
 )
 
 // DirectAdapter is a directly connected adapter

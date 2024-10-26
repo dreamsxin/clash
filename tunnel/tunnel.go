@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Dreamacro/clash/adapters"
-	C "github.com/Dreamacro/clash/constant"
-	"github.com/Dreamacro/clash/observable"
-	R "github.com/Dreamacro/clash/rules"
+	"github.com/dreamsxin/clash/adapters"
+	C "github.com/dreamsxin/clash/constant"
+	"github.com/dreamsxin/clash/observable"
+	R "github.com/dreamsxin/clash/rules"
 
 	"gopkg.in/eapache/channels.v1"
 )

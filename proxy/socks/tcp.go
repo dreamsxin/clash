@@ -6,10 +6,10 @@ import (
 	"net"
 	"strconv"
 
-	C "github.com/Dreamacro/clash/constant"
-	"github.com/Dreamacro/clash/tunnel"
+	C "github.com/dreamsxin/clash/constant"
+	"github.com/dreamsxin/clash/tunnel"
 
-	"github.com/riobard/go-shadowsocks2/socks"
+	"github.com/shadowsocks/go-shadowsocks2/socks"
 	log "github.com/sirupsen/logrus"
 )
 
